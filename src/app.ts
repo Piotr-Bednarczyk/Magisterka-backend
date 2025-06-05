@@ -13,8 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Database connection
-const MONGO_URL = 'mongodb://localhost:27017/formsdb'; // dostosuj do swojej bazy
-
+const MONGO_URL = 'mongodb+srv://Piotrbed10:wDB7lHnVW1m37uxj@151010pb.xvr8yjm.mongodb.net/formsdb?retryWrites=true&w=majority&appName=151010PB';
 mongoose.connect(MONGO_URL)
   .then(() => {
     console.log('Database connected successfully');
