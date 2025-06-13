@@ -2,7 +2,6 @@ import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import { setFormRoutes } from './routes/form.routes';
-import dbConfig from './config/db.config';
 import cors from 'cors';
 
 const app = express();
