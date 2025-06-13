@@ -21,7 +21,9 @@ mongoose.connect(MONGO_URL)
     console.error('Database connection error:', err);
   });
 
-app.use(cors()); 
+app.use(cors({
+  origin: '*'
+}));
 
 // Routes
 setFormRoutes(app);
