@@ -25,6 +25,11 @@ app.use(cors({
   origin: '*'
 }));
 
+// Wake-up endpoint
+app.get('/ping', (req, res) => {
+  res.send('pong');
+});
+
 // Routes
 setFormRoutes(app);
 
